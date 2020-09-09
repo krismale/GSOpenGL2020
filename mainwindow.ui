@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>767</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OpenGL in Qt is great fun!</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>1047</width>
+     <height>714</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>15</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="Buttons" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>1030</width>
+        <height>25</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>2</x>
+         <y>0</y>
+         <width>1021</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <item>
+         <widget class="QPushButton" name="playButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Play</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="resetGameButton">
+          <property name="text">
+           <string>Reset game</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="wireframeButton">
+          <property name="text">
+           <string>Turn on wireframe mode</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="axisButton">
+          <property name="text">
+           <string>Hide grid</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="horizontalWidget_2" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>1030</width>
+        <height>0</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>221</x>
+         <y>1</y>
+         <width>801</width>
+         <height>651</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="OpenGLLayout"/>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>191</width>
+         <height>651</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="OutlinerObjectEdit">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Edit Object</string>
+          </property>
+          <widget class="QTabWidget" name="TransformTabs">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>191</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="TranslateTab">
+            <attribute name="title">
+             <string>Translate</string>
+            </attribute>
+            <widget class="QWidget" name="horizontalLayoutWidget_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>169</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="TranslateX">
+              <item>
+               <widget class="QLabel" name="TranslateXLabel">
+                <property name="text">
+                 <string>X Translate</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="TranslateXValues">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="horizontalLayoutWidget_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>70</y>
+               <width>169</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="TranslateZ">
+              <item>
+               <widget class="QLabel" name="TranslateZLabel">
+                <property name="text">
+                 <string>Z Translate</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="TranslateZValues">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="horizontalLayoutWidget_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>169</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="TranslateY">
+              <item>
+               <widget class="QLabel" name="TranslateYLabel">
+                <property name="text">
+                 <string>Y Translate</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="TranslateYValues">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="RotateTab">
+            <attribute name="title">
+             <string>Rotate</string>
+            </attribute>
+            <widget class="QWidget" name="horizontalLayoutWidget_9">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>70</y>
+               <width>169</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="RotatePitch">
+              <item>
+               <widget class="QLabel" name="RotatePitchLabel">
+                <property name="text">
+                 <string>Pitch Rotate</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="RotatePitchValues">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="horizontalLayoutWidget_8">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>169</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="RotateRoll">
+              <item>
+               <widget class="QLabel" name="RotateRollLabel">
+                <property name="text">
+                 <string>Roll Rotate</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="RotateRollValues">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="horizontalLayoutWidget_10">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>169</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="RotateYaw">
+              <item>
+               <widget class="QLabel" name="RotateYawLabel">
+                <property name="text">
+                 <string>Yaw Rotate</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="RotateYawValues">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="ScaleTab">
+            <attribute name="title">
+             <string>Scale</string>
+            </attribute>
+            <widget class="QWidget" name="horizontalLayoutWidget_7">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>169</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="ScaleY">
+              <item>
+               <widget class="QLabel" name="ScaleYLabel">
+                <property name="text">
+                 <string>Y Scale</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="ScaleYValues">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="horizontalLayoutWidget_5">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>169</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="ScaleX">
+              <item>
+               <widget class="QLabel" name="ScaleXLabel">
+                <property name="text">
+                 <string>X Scale</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="ScaleXValues">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="horizontalLayoutWidget_6">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>70</y>
+               <width>169</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="ScaleZ">
+              <item>
+               <widget class="QLabel" name="ScaleZLabel">
+                <property name="text">
+                 <string>Z Scale</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="ScaleZValues">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="moveToButton">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>190</y>
+             <width>91</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Move to object</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="ObjectName">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>171</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>ObjectName</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="renderCollidersCheckBox">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>220</y>
+             <width>101</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Render Colliders</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListWidget" name="listWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1048</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
